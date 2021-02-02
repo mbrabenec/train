@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Seat } from './Seat.js';
 
 function App() {
+
+  // function handleClick(e) {
+  //   console.log(e);
+  // }
+  
+const [nums, setNums] = useState([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="carriage-row">
+
+    {
+    nums.map((value, index) => {
+
+        return < Seat seatNum={value} key={index}/>
+      })
+      
+      }
+
     </div>
   );
-}
+
+  }
 
 export default App;
