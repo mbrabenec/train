@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px; 
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.carriage {             /*  ADDED IN  */
+  display: flex;
+  flex-direction: row;
 }
 
 .carriage-row {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 20rem;
+  /* flex-wrap: wrap;
+  height: 20rem; */
 }
 
 .train-seat {
@@ -22,7 +27,7 @@ html {
 }
 
 .train-seat__seat {
-  stroke: black; 
+  stroke: black;
   stroke-width: 2;
 }
 
